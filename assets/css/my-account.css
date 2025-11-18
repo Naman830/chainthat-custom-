@@ -1,0 +1,149 @@
+/* .my-account {
+    display: flex;
+}
+
+.my-account-navigation {
+    width: 30%;
+}
+
+.my-account-navigation h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.my-account-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.my-account-navigation ul li {
+    margin-bottom: 10px;
+}
+
+.my-account-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.my-account-content {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.my-account-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+} */
+
+
+.login-register-form {
+    width: 98%;
+    display: flex;
+    padding: 5%;
+    flex-wrap: nowrap;
+}
+.register-form {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.login-form {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-right: 30px;
+
+}
+
+.login-register-form button.woocommerce-Button.button, .login-register-form button.woocommerce-button.button.woocommerce-form-login__submit {
+        height: 50px;
+        padding: 0rem .9375rem 0rem .9375rem;
+        position: relative;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: #D90906;
+        border: none;
+        border-radius: 5px;
+        box-shadow: none;
+        color: #FEFEFE;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 50px;
+}
+.login-register-form p.woocommerce-LostPassword.lost_password a {
+    display: inline-block;
+    color: #D90906;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Dashboard */
+
+body.woocommerce-account #content {
+    padding: 6rem 3rem;
+    
+}
+
+.Container-fluid.dasboard-main {
+    height: auto;
+    min-height: 100vh;
+}
+body.woocommerce-account li.woocommerce-MyAccount-navigation-link a {
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    line-height: 1em;
+    color: #444444;
+    text-decoration: none;
+    border-width: 0;
+    background-color: transparent;
+    -webkit-transition: color 250ms ease, background-color 250ms ease;
+    -moz-transition: color 250ms ease, background-color 250ms ease;
+    -o-transition: color 250ms ease, background-color 250ms ease;
+    transition: color 250ms ease, background-color 250ms ease;
+}
+  .footer {
+    padding-top: 15rem;
+}
+body.woocommerce-account .woocommerce-MyAccount-content  {
+    overflow-y: scroll;
+}
+body.woocommerce-account .woocommerce-MyAccount-content a {
+    color: #D90906!important;
+}
+
+body.woocommerce-account li.woocommerce-MyAccount-navigation-link.is-active a {
+    font-weight: bold;
+    color: #D90906!important;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    border-right:1px solid #eee;
+    padding: 40px 20px;
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+    .login-register-form {
+        display: block;
+        padding: 5%;
+        flex-wrap: nowrap;
+    }
+    .login-form , .register-form{
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-right: 0px;
+    }
+
+  }

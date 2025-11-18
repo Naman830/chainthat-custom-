@@ -1,0 +1,7 @@
+// Import only the necessary components
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";  // Example: Core reboot styles
+@import "node_modules/bootstrap/scss/grid";    // Example: Only Grid system
+// Add more specific components as needed, such as buttons, forms, etc.

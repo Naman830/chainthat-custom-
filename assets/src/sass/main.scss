@@ -1,0 +1,29 @@
+// src/sass/main.scss
+
+// Import sass-mq first
+@import "sass-mq";
+
+// Your other SCSS code here
+@import "essentials"; // Assuming essentials.scss exists
+
+
+// Generic
+// @import "2-generic/generic";
+@import "2-generic/gutenberg";
+// @import "2-generic/slick-carousel";
+// @import "2-generic/search-results";
+
+// @import '~bootstrap/scss/bootstrap';
+
+
+// Layouts.
+@import "4-layouts/404/404";
+@import "4-layouts/blog/blog";
+@import "4-layouts/blog/single";
+@import "4-layouts/footer/footer";
+@import "4-layouts/header/navigation";
+@import "4-layouts/home/home";
+@import "4-layouts/contact/contact";
+// @import "4-layouts/search-form";
+
+// Components

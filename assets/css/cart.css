@@ -1,0 +1,154 @@
+ 
+body.page-template-tamplate-cart div#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 3rem 4rem 3rem;
+}
+
+body.page-template-tamplate-cart h1 {
+    color: #444444;
+    font-weight: 200;
+}
+
+body.page-template-tamplate-cart .product-name a {
+    padding: 3px 0px 3px 0px;
+    position: relative;
+    display: inline-block;
+    color: #D90906;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none !important;
+}
+body.page-template-tamplate-cart .product-thumbnail a img {
+    width: 75px!important;
+    margin: 0;
+}
+body.page-template-tamplate-cart span.woocommerce-Price-amount.amount{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px!important;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px!important;
+}
+
+body.page-template-tamplate-cart .quantity input {
+    width: 100%;
+    max-width: 100px;
+    padding: 5px 0px;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+    box-shadow: none;
+    color: #232323;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    text-align: center;
+}
+
+body.page-template-tamplate-cart td, body.page-template-tamplate-cart th {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+body.page-template-tamplate-cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px 0px;
+
+}
+
+body.page-template-tamplate-cart td.actions {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+}
+body.page-template-tamplate-cart table th {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+}
+body.page-template-tamplate-cart button{
+    height: 50px;
+    padding: 0rem .9375rem 0rem .9375rem;
+    background-color: #D90906;
+    border: none;
+    border-radius: 5px;
+    color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+    text-decoration: none !important;
+}
+body.page-template-tamplate-cart .coupon button.button {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+body.page-template-tamplate-cart input#coupon_code {
+    width: 48%;
+    min-width: 220px;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0rem 2.625rem 0rem .625rem;
+    margin: 0px 10px 5px 0px;
+    left: 0;
+    position: relative;
+    background-color: #FEFEFE;
+    border: 1px solid #dedede;
+    box-shadow: none;
+    color: #d6d6d6;
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+}
+
+body.page-template-tamplate-cart .cart_totals h2 {
+    margin: 0 0px 30px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 34px;
+}
+
+body.page-template-tamplate-cart span.woocommerce-Price-amount.amount:first-child {
+    padding: 0%;
+}
+
+body.page-template-tamplate-cart .cart_totals th {
+    font-size: 17px;
+}
+body.page-template-tamplate-cart .wc-proceed-to-checkout a {
+    background-color: #D90906;
+    box-shadow: none;
+    color: #ffffff;
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    border-radius: 5px;
+}

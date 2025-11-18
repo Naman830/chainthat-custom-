@@ -1,0 +1,35 @@
+.error-404 {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+    margin-top: 25px;
+}
+
+.error-404 .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error-404 .error-code {
+    font-size: 120px;
+    font-weight: bold;
+    color: #ff7b00;
+}
+
+.error-404 .error-message {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+.error-404 .error-description {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #495057;
+}
+
+.error-404 a.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}

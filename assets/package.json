@@ -1,0 +1,49 @@
+{
+  "name": "codobux",
+  "version": "1.0.0",
+  "description": "codobux theme package",
+  "main": "main.js",
+  "scripts": {
+    "prod": "cross-env NODE_ENV=production node_modules\\.bin\\webpack --mode production --progress",
+    "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
+    "clean": "rm -rf build/*"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Mohit Kumar",
+  "license": "ISC",
+  "private": "false",
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "cssnano": "^7.0.6",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "postcss-loader": "^8.1.1",
+    "rimraf": "^6.0.1",
+    "sass": "^1.81.0",
+    "sass-loader": "^12.6.0",
+    "sass-mq": "^5.0.1",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "uuid": "^11.0.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

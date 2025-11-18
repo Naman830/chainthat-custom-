@@ -1,0 +1,362 @@
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) .woocommerce-breadcrumb {
+    font-size: .92em;
+    color: #767676;
+}
+
+nav.woocommerce-breadcrumb {
+    margin: 0 0 1em;
+    padding: 50px 20px !important;
+}
+
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) .woocommerce-breadcrumb, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) .woocommerce-breadcrumb a {
+    color: #767676;
+    padding: 3px 0px 3px 0px;
+    position: relative;
+    display: inline-block;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none !important; 
+}
+
+.woocommerce div.product .product_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem !important;
+    font-style: normal;
+    line-height: 34px;
+    color: #444444;
+    padding-bottom: 40px;
+}
+.woocommerce div.product {
+    padding: 0px 20px!important;
+}
+.woocommerce-product-gallery__image {
+    margin: 10px;
+}
+.woocommerce div.product div.images img {
+    display: block;
+    width: 100%;
+    padding: 10%;
+    border: 1px solid #d0d0d0;
+    height: auto;
+    box-shadow: none;
+}
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    padding: 60px 0px;
+    border-top: 1px solid #d0d0d0;
+}
+.summary.entry-summary h4 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 14px;
+}
+
+span.woocommerce-Price-amount.amount{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 24px;
+    line-height: 70px;
+    color: rgb(70, 70, 70);
+}
+span.woocommerce-Price-amount.amount:first-child {
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 70px;
+    line-height: 70px;
+    display: block;
+    padding-top: 20px;
+}
+.woocommerce div.product div.summary {
+    margin-bottom: unset;
+}
+.woocommerce div.product form.cart .button {
+    width: 50%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: #3DBA63;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+}
+
+.woocommerce .quantity .qty {
+    height: 50px;
+    padding: 0rem .9375rem 0rem .9375rem;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+}
+.woocommerce p.qty-text {
+    font-weight: 800;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+}
+.woocommerce div.product {
+    padding: 40px 0px;
+}
+.woocommerce-product-details__short-description h2 {
+    display: none;
+}
+.woocommerce-product-details__short-description p {
+    max-width: 500px;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+}
+.woocommerce-product-details__short-description p:first-child{
+    margin: 0rem 0rem 1.5rem 0rem;
+    font-size: 18px;
+    line-height: 26px;
+}
+.btn-wishlist-compare {
+    width: 100%;
+    width: fit-content;
+    display: block;
+    padding: 120px 0px 20px 0px;
+}
+
+.btn-wishlist-compare button {
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    position: relative;
+}
+.btn-wishlist-compare button ion-icon {
+    font-size: 20px;
+    margin-right: 0px;
+    padding: 10px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    margin-bottom: -14px;
+}
+
+.woocommerce div.product p.stock
+{
+    padding-bottom: 40px;
+    margin: 0;
+    position: relative;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 14px;
+    text-transform: capitalize;
+}
+p.stock{
+    display: none;
+  }
+.woocommerce-product-stock-status p {
+    display: block!important;
+}
+
+/* .woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+    display: none;
+} */
+
+
+div#reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+}
+div#comments {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-right: 5%;
+}
+div#comments h2{
+    margin: 0rem 0rem 1.5rem 0rem;
+    display: block;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+    content: 'Product Reviews';
+}
+
+#comments p.woocommerce-noreviews {
+    display: block;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    content: 'This product has not had any reviews just yet.';
+}
+
+div#review_form_wrapper span#reply-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px !important;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px !important;
+    margin-bottom: 20px;
+}
+
+div#review_form_wrapper p.comment-notes {
+    display: none;
+}
+
+div#review_form_wrapper label {
+    display: block;
+    padding: 20px 0px 10px 0px;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 22px;
+}
+.woocommerce #review_form #respond textarea,.woocommerce #review_form #respond select#rating , .woocommerce #review_form #respond input#author, .woocommerce #review_form #respond input#email{
+    height: 50px;
+    width: 100%;
+    padding: 0rem .9375rem 0rem .9375rem;
+    margin: 0;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+}
+input#wp-comment-cookies-consent {
+    width: unset;
+}
+
+.woocommerce #review_form #respond p input#submit{
+    height: 50px;
+    padding: 0rem .9375rem 0rem .9375rem;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #D90906;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+}
+.woocommerce p.stars a::before{
+    color: #D90906;
+    font-size: 17px;
+
+}
+
+
+
+
+
+
+
+
+/* variation */
+
+.woocommerce div.product form.cart .variations select {
+    width: 100%;
+    height: 50px;
+    padding: 0rem .9375rem 0rem .9375rem;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+}
+.woocommerce div.product form.cart .variations label {
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 12px;
+}
+.woocommerce div.product form.cart .variations tbody, .woocommerce div.product form.cart .variations  td,.woocommerce div.product form.cart .variations  tfoot,.woocommerce div.product form.cart .variations  th, .woocommerce div.product form.cart .variations  thead,.woocommerce div.product form.cart .variations  tr {
+    display: block!important;
+}
+
+.woocommerce-variation-price span.woocommerce-Price-amount.amount {
+    line-height: unset;
+    padding: 40px 0px;
+    font-size: 40px;
+}
+
+
+/* sidebar none */
+body.product-template-default.single.single-product.postid-103.logged-in.admin-bar.wp-custom-logo.theme-plug.woocommerce.woocommerce-page.woocommerce-js.customize-support #sidebar {
+    display: none;
+}
+
+
+div#filter {
+    display: block!important;
+}
