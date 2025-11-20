@@ -1,0 +1,275 @@
+
+
+h3.sub-heading.heading {
+    color: #A7A7A7;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+h2.heading.heading-recommended {
+    color: #FF7B00;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h4.author.vcard {
+    color: #FF7B00;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+h2.entry-title.post-card-title.mt-3 a {
+    color: #0F0F0F;
+    font-family: "Poppins", Sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 37px;
+}
+.entry-content {
+    color: #6B6B6B;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+a.codobux-read-more.text-white.mt-3.btn.btn-info {
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    fill: #FF7B00;
+    padding: 0;
+    color: #FF7B00!important;
+    background-color: #61CE7000;
+    border: none!important;
+    margin-top: 40px!important;
+}
+.row.title-row {
+    padding: 49px 0px;
+}
+.row.title-row h2 {
+    color: #0F0F0F;
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.row.title-row .col-md-4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+.row.title-row .col-md-8 {
+    flex: 0 0 auto;
+    width: 80%;
+}
+h2.entry-title.post-card-title.mb-3 {
+    line-height: 1.2rem;
+}
+
+h2.entry-title.post-card-title.mb-3 a{
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+span.author.vcard a {
+    color: #A7A7A7;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+a.page-numbers {
+    color: rgb(0 0 0);
+    text-decoration: underline;
+    font-family: 'Poppins';
+}
+
+span.btn.border.border-secondary.mr-2.mb-2 {
+    border: none!important;
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 8px  10px;
+}
+span.page-numbers.current span {
+    color:    #FF7B00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Single */
+
+
+body.single .heading-h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    padding-right: 3rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+body.single  .prev-link.col-md-6.col-sm-12 a,
+body.single .next-link.col-md-6.col-sm-12 a
+{
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-right: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    word-break: normal;
+}
+body.single .row.single-pagination {
+    margin-top: 100px;
+}
+body.single a.tags-text {
+    font-weight: 600;
+    margin-right: .7rem;
+    font-family: Montserrat;
+    font-size: 18px;
+    /* font-weight: 700; */
+    line-height: 24.38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6b6b6b;
+}
+
+
+body.single h3#reply-title, 
+h4.recent-comments {
+    color: #121212;
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    line-height: 48px;
+}
+body.single .review-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1e1e1e;
+}
+body.single .review-form textarea {
+    resize: vertical;
+    width: 95%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    transition: all .3s;
+}
+body.single .review-form input {
+    width: 95%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    transition: all .3s;
+}
+body.single .review-form  p.comment-form-cookies-consent label {
+    display: inline!important;
+    margin-left: 10px;
+}
+body.single .review-form  p.comment-form-cookies-consent label {
+    display: inline!important;
+    margin-left: 5px;
+    font-size: 15px!important;
+}
+body.single .review-form  input#wp-comment-cookies-consent {
+    display: inline;
+    width: unset;
+}
+body.single .review-form  input#submit {
+    background-color: #ff7b00 !important;
+    color: #fff !important;
+    border: none;
+    width: inherit;
+}
+
+
+
+
+.recent-comments-container {
+    max-height: 70vh; /* Set your desired max height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding-right: 10px; /* Optional: Add some space for the scrollbar */
+    margin-top: 30px;
+}
+/* Scrollbar styles for Webkit browsers (Chrome, Safari) */
+.recent-comments-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+.recent-comments-container::-webkit-scrollbar-track {
+    scrollbar-width: thin;
+    scrollbar-color: #FF7B00 #f1f1f1;
+    /* border-radius: 20px; */
+}
+.recent-comments-container::-webkit-scrollbar-thumb {
+    background-color: #FF7B00; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.recent-comments-container::-webkit-scrollbar-thumb:hover {
+    background-color: #e06f00; /* Color of the scrollbar thumb on hover */
+}
+
+/* Scrollbar styles for Firefox */
+.recent-comments-container::-webkit-scrollbar-track {
+    scrollbar-width: thin;
+    scrollbar-color: #FF7B00 #f1f1f1;
+}
+
+/* List styles */
+.recent-comments-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recent-comments-list li {
+    margin-bottom: 15px; /* Optional: Add spacing between comments */
+}
+.recent-comments-list li strong {
+    color: #ff7b00 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-main-box .heading-h4 {
+    line-height: 16px;
+    margin-top: 10px;
+}
+.sidebar-main-box .heading-h4  a {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1rem!important;
+}
+
+// body.single img.featured-image.breadcrumb.mb-3 {
+//     height: 480px;
+// }

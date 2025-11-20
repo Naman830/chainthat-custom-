@@ -1,0 +1,18 @@
+<svg id="animated-svg" width="100%" height="100%" viewBox="0 0 1728 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- Gradient definitions -->
+            <linearGradient id="paint0_linear_1755_1808" x1="1600.41" y1="149.571" x2="1555.47" y2="-152.028" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EB7923"/>
+                <stop offset="0.520951" stop-color="#FCB336"/>
+                <stop offset="1" stop-color="#00524C"/>
+            </linearGradient>
+            
+            <!-- Clip path for progressive reveal -->
+            <clipPath id="revealClip">
+                <rect id="animated-rect" x="0" y="0" width="1728" height="192"/>
+            </clipPath>
+        </defs>
+        
+        <!-- Path with gradient fill and clip path applied -->
+        <path d="M-98 111.242C5.83334 61.9711 265.8 -21.7893 475 37.3357C736.5 111.242 767 215.057 1078.5 158.453C1390 101.849 1725 58.3458 1825 98.3887" stroke="url(#paint0_linear_1755_1808)" stroke-width="34" fill="none" clip-path="url(#revealClip)"/>
+    </svg>

@@ -1,0 +1,106 @@
+
+#contact-us {
+    margin-top: 70px;
+}
+
+#contact-us .main-box.get-in-touch-box {
+    padding-top: 35px !important;
+    padding-right: 40px !important;
+    padding-bottom: 49px !important;
+    padding-left: 40px !important;
+    background: #272727 !important;
+    border-radius: 30px !important;
+}
+
+#contact-us ion-icon.md.hydrated {
+    font-size: 55px;
+    padding: 9px;
+    color: #272727;
+    background: #f3f7ff!important;
+    border: solid 3px transparent;
+    border-radius: 15px;
+}
+#contact-us  h2.text-light {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: normal;
+}
+#contact-us  h3.header-h3.text-light {
+    font-size: 24px !important;
+    font-weight: 700;
+}
+
+#contact-us h3.heading-h3.contact-h3 {
+    font-size:40px!important;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0px 0px 30px 0px;
+}
+#contact-us input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, 
+#contact-us textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    border-width: 0px;
+    padding: 19px 10px 18px;
+    font-size: 16px;
+    border-color: transparent;
+    background-color: #f8f9fa;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+#contact-us textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    height: 150px;
+}
+#contact-us input.wpcf7-form-control.wpcf7-submit {
+    min-height: 55px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 6px;
+    background: #121212;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .12);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+ iframe {
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+
+.wpcf7-not-valid-tip {
+    color: #000000;
+    font-size: 1em;
+    padding: 5px 5px;
+    background: aliceblue;
+    margin-top: 10px;
+    font-weight: normal;
+    display: block;
+    border-radius: 4px;
+}
+.wpcf7 form .wpcf7-response-output {
+    margin: 1em 0.5em 1em;
+    padding: .5em 1em;
+    border: none;
+    background: #ff7b00;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .main-icon-box  .row {
+        margin: 8px 0!important;
+    }
+    .main-icon-box .col-md-6 {
+        flex: 0 0 auto;
+        width: auto;
+        margin-top: 20px;
+    }
+}

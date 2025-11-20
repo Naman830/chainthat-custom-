@@ -6,216 +6,801 @@
  */
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-	<style>
-		@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			font-family: "Poppins", sans-serif;
-			text-decoration: none;
-		}
-
-		:root {
-			--main-color: #eb7923;
-			--white-color: #ffffff;
-			--green-color: #00524c;
-			--black-color: #000;
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		body {
-			position: relative;
-			
-		}
-
-		.container-all {
-			width: 100% !important;
-			max-width: 1600px !important;
-			margin-left: auto !important;
-			margin-right: auto !important;
-			padding-left: 15px !important;
-			padding-right: 15px !important;
-			box-sizing: border-box !important;
-		}
-
-		.hero-area{
-			width: 100%;
-			height: 100vh;
-		}
+<?php get_header(); ?>
 
 
-		
+<div id="primary">
+	<main id="main" class="site-main max-w-1280 m-auto lg:p-4" role="main">
 
-		/* TOP BARS */
-		.swiper-pagination {
-			top: 20px !important;
-			bottom: auto !important;
-			display: flex;
-			justify-content: center;
-			gap: 10px;
-		}
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!-- HERO SECTION -->
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<section class="hero-area">
+			<div class="container-all">
+				<div class="row align-items-center">
 
-		.swiper-pagination-bullet {
-			width: 40px;
-			height: 4px;
-			border-radius: 2px;
-			background: rgba(255, 255, 255, 0.3);
-			opacity: 1;
-			transition: 0.3s;
-		}
+					<!-- LEFT: HERO TEXT SLIDER -->
+					<div class="col-lg-6 col-md-12 hero-text-container">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
 
-		.swiper-pagination-bullet-active {
-			background: #fff;
-			width: 50px;
-		}
+								<div class="swiper-slide">
+									<h3 class="heading">Insurance Focus</h3>
+									<p class="paragraph">Empowering (re)insurers, MGAs, and brokers with advanced
+										technology, we streamline
+										operations and drive innovation. ChainThat enables agile insurance organizations
+										that meet evolving customer needs to stay ahead in the market.</p>
+									<a href="#" class="btn-all">Book a demo</a>
+								</div>
+								<div class="swiper-slide">
+									<h3 class="heading">Industry Insider</h3>
+									<p class="paragraph">Our team brings decades of combined experience from within the
+										insurance sector,
+										coupled with cutting-edge technological expertise.</p>
+									<a href="#" class="btn-all">Book a demo</a>
+								</div>
+								<div class="swiper-slide">
+									<h3 class="heading">Activate Agility</h3>
+									<p class="paragraph">Activate your growth with ChainThat’s cloud-agnostic,
+										SaaS-enabled
+										platforms. Our
+										intuitive and configurable technology enables your business to unlock its full
+										potential.</p>
+									<a href="https://paleturquoise-aardvark-551228.hostingersite.com/contact-us/"
+										class="btn-all">Book a demo</a>
+								</div>
 
-		/* Slide styling */
-		.swiper-slide {
-			background: var(--white-color);
-			display: flex;
-			justify-content: flex-end;
-			align-items: flex-start;
-			flex-direction: column;
-		}
-
-		.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    background: var(--main-color);
-}
-
-		.hero-img-col {
-			position: absolute;
-			top: 80px;
-			right: 0;
-		}
-
-		.hero-img-col image {
-			position: absolute;
-			right: 0;
-			max-width: 800px
-		}
-
-		.heading {
-			margin-bottom: 22px;
-			font-size: 3.7vw;
-			font-weight: 700;
-			color: var(--green-color);
-		}
-
-		.paragraph {
-			margin-bottom: 26px;
-			color: var(--black-color);
-			font-size: 1.1vw;
-			font-weight: 400;
-		}
-
-		.btn-all {
-			padding: 15px 25px;
-			text-decoration: none;
-			transition: all 0.3s;
-			color: var(--white-color);
-			background: var(--main-color);
-			border-width: 0px;
-			border-radius: 26px;
-			color: #FFFFFF;
-			transition-duration: 400ms;
-		}
-
-		.btn-all:hover {
-			color: var(--white-color);
-			background: var(--green-color);
-		}
-	</style>
-</head>
-
-<body>
-	<?php get_header(); ?>
-
-	<section class="hero-area">
-		<div class="container-all">
-			<div class="row align-items-center">
-
-				<!-- LEFT: HERO TEXT SLIDER -->
-				<div class="col-lg-6 col-md-12">
-					<div class="swiper mySwiper">
-						<div class="swiper-wrapper">
-
-							<div class="swiper-slide">
-								<h3 class="heading">Insurance Focus</h3>
-								<p class="paragraph">Empowering (re)insurers, MGAs, and brokers with advanced technology, we streamline
-									operations and drive innovation. ChainThat enables agile insurance organizations
-									that meet evolving customer needs to stay ahead in the market.</p>
-								<button class="btn-all">Book a demo</button>
 							</div>
-							<div class="swiper-slide">
-								<h3 class="heading">Industry Insider</h3>
-								<p class="paragraph">Our team brings decades of combined experience from within the insurance sector,
-									coupled with cutting-edge technological expertise.</p>
-								<button class="btn-all">Book a demo</button>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="heading">Activate Agility</h3>
-								<p class="paragraph">Activate your growth with ChainThat’s cloud-agnostic, SaaS-enabled platforms. Our
-									intuitive and configurable technology enables your business to unlock its full
-									potential.</p>
-								<button class="btn-all">Book a demo</button>
-							</div>
+
+							<!-- ONLY PAGINATION (3 bars) -->
+							<div class="swiper-pagination"></div>
 
 						</div>
+					</div>
 
-						<!-- ONLY PAGINATION (3 bars) -->
-						<div class="swiper-pagination"></div>
+					<!-- RIGHT: FIXED IMAGE -->
+					<div class="col-lg-6 col-md-12 hero-img-col">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/hero/heroImg.svg"
+							alt="hero image">
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!-- SLIDER -->
+		<!-- ======================= -->
+		<!-- ======================= -->
+
+		<section class="partners-area">
+			<p class="partners-title">Trusted by Our partners</p>
+
+			<div class="partners-slider">
+				<div class="slide-track">
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo.png"
+							alt="partner-logo-0">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo1.jpg"
+							alt="partner-logo-1">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo2.jpg"
+							alt="partner-logo-2">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo3.jpg"
+							alt="partner-logo-3">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo4.svg"
+							alt="partner-logo-4">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo5.png"
+							alt="partner-logo-5">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo6.webp"
+							alt="partner-logo-6">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo7.webp"
+							alt="partner-logo-7">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo8.png"
+							alt="partner-logo-8">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo9.svg"
+							alt="partner-logo-9">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo10.png"
+							alt="partner-logo-10">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo11.jpg"
+							alt="partner-logo-11">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider/partner-logo12.png"
+							alt="partner-logo-12">
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!-- Service Section -->
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<section class="platform-container">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/platform/platform.svg"
+				alt="working chainthat">
+		</section>
+
+		<section class="platform container-fluid">
+			<div class="container">
+				<div class="section-title-box">
+					<span class="section-subheading">
+						Pain Relievers & Gain Creators
+					</span>
+					<h2 class="section-heading">
+						Platforms to Build on
+					</h2>
+					<p class="section-description">
+						ChainThat’s enterprise-grade, highly configurable insurance technology platforms – Beyond Policy
+						Administration (BPA) and Beyond Multi-National Programs (BMNP) – activate agility and innovation
+						in
+						processes and operations, empowering your business to thrive in competitive spaces.
+					</p>
+				</div>
+				<div class="platform-row-container">
+					<div class="platform-item">
+						<h3 class="p-card-title">
+							Beyond Policy
+							Administration®
+						</h3>
+						<div class="platform-circle-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/platform/BPA.png"
+								alt="working chainthat">
+						</div>
+						<p class="card-description">
+							Beyond Policy Administration® (BPA) is the next-generation platform that provides end-end
+							policy
+							servicing and administration capabilities for insurers.
+						</p>
+						<button class="common-btn">
+							<a href="https://chainthat.com/bpa/">Activate your agility</a>
+						</button>
+					</div>
+					<div class="platform-item">
+						<h3 class="p-card-title">
+							Beyond Multinational Programs®
+						</h3>
+						<div class="platform-circle-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/platform/BPA.png"
+								alt="working chainthat">
+						</div>
+						<p class="card-description">
+							The digital co-ordination created for Insurers, for underwriting and processing complex
+							multinational insurance programs.
+						</p>
+						<button class="common-btn">
+							<a href="https://chainthat.com/bmnp">Activate your agility</a>
+						</button>
+					</div>
+					<div class="platform-item">
+						<h3 class="p-card-title">
+							Beyond Insurance Accounting®
+						</h3>
+						<div class="platform-circle-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/platform/BPA.png"
+								alt="working chainthat">
+						</div>
+						<p class="card-description">
+							Beyond Insurance Accounting® (BIA) is an industry-specific accounting platform that unifies
+							billing, payments, and accounting into a compliant, automated solution.
+						</p>
+						<button class="common-btn">
+							<a href="https://chainthat.com/bia/">Activate your agility</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!-- STATS IMAGES-->
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<section class="stat-slider2">
+			<div class="container-all my-5">
+				<div class="infinite-slider-wrapper">
+					<div class="infinite-slider" id="infiniteSlider">
+						<!-- 3 main images -->
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BIA_HERO_Screen-2.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/adminis1.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BMNP_1.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BPA_1.png"
+							alt="chainthat-stat-images">
+
+
+
+						<!-- clone for infinite loop -->
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BIA_HERO_Screen-2.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/adminis1.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BMNP_1.png"
+							alt="chainthat-stat-images">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BPA_1.png"
+							alt="chainthat-stat-images">
 
 					</div>
 				</div>
+			</div>
+		</section>
 
-				<!-- RIGHT: FIXED IMAGE -->
-				<div class="col-lg-6 col-md-12 hero-img-col">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/swoos3.png"
-						alt="hero image">
+		<!-- STAT NUMBER -->
+		<section class="stats-area">
+			<div class="container-all">
+				<div class="stat-inner-container">
+					<div class="row stats-row">
+
+						<!-- Grid 1 -->
+						<div class="col-12 col-md-6 mb-4">
+							<div class="stat-box">
+								<h2>2015</h2>
+								<p>founded</p>
+							</div>
+						</div>
+
+						<!-- Grid 2 -->
+						<div class="col-12 col-md-6 mb-4">
+							<div class="stat-box">
+								<h2>3</h2>
+								<p>Continents with partners & customer</p>
+							</div>
+						</div>
+
+						<!-- Grid 3 -->
+						<div class="col-12 col-md-6 mb-4">
+							<div class="stat-box">
+								<h2>100%</h2>
+								<p>Of staff has direct insurance industry experience or specialized insurance training
+								</p>
+							</div>
+						</div>
+
+						<!-- Grid 4 -->
+						<div class="col-12 col-md-6 mb-4">
+							<div class="stat-box">
+								<h2 class="stat-box-text">~ $0.5 billion</h2>
+								<p>Gross Written Premium Processed in the platforms</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!-- WHY CHAINTHAT SECTION -->
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<section class="why-chainthat py-5" style="background:#f6f6f6;">
+			<div class="container">
+
+				<!-- Heading -->
+				<div class="row justify-content-center mb-4 why-text">
+					<div class="col-lg-8 text-center">
+						<h2 class="heading-2">Why ChainThat?</h2>
+						<p class="paragraph-2">
+							ChainThat’s platform empowers you to launch innovative products and explore new insurance
+							models
+							efficiently. Our industry-leading technology ensures your business stays ahead of the curve.
+						</p>
+					</div>
+				</div>
+
+				<!-- 4 Cards -->
+				<div class="row g-4 why-card-row-container">
+
+					<!-- Card 1 -->
+					<div class="col-md-6 col-lg-3">
+						<div class="why-card">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon1.svg"
+								alt="why-icons">
+							<h3 class="why-card-heading">Insurance Insider</h3>
+							<p class="why-card-paragraph">
+								We bring valuable insights to the table. Our team combines this deep understanding of
+								the
+								insurance business with cutting-edge technology to support insurance organisation's
+								throughout the value chain that allows them to meet their business goals.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card 2 -->
+					<div class="col-md-6 col-lg-3">
+						<div class="why-card">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon2.svg"
+								alt="why-icons">
+							<h3 class="why-card-heading">Enterprise Grade Platforms </h3>
+							<p class="why-card-paragraph">
+								Our modern SaaS platforms leverage cutting edge technologies to create a configurable
+								system
+								that provides seamless experience for insurers in managing their end-end policy
+								lifecycle.
+								Our API first approach with industry-leading security measures ensure effortless
+								integration
+								and scalable solution.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card 3 -->
+					<div class="col-md-6 col-lg-3">
+						<div class="why-card">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon3.svg"
+								alt="why-icons">
+							<h3 class="why-card-heading">Faster speed to market</h3>
+							<p class="why-card-paragraph">
+								Working with ChainThat platforms enables insurers and MGAs to swiftly and efficiently
+								bring
+								new products to market. With streamlined processes and comprehensive support, you can
+								reduce
+								time-to-market, enhance flexibility, and ensure a seamless experience from product
+								development to launch.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card 4 -->
+					<div class="col-md-6 col-lg-3">
+						<div class="why-card">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon4.svg"
+								alt="why-icons">
+							<h3 class="why-card-heading">Delivery Agility</h3>
+							<p class="why-card-paragraph">
+								ChainThat embraces delivery agility, eschewing traditional-only approaches in favor of
+								innovative, out-of-the-box thinking. Our fast-paced methodology supports business
+								agility,
+								allowing insurers to adapt swiftly to changing market demands. We prioritize flexible,
+								iterative delivery that enable quick pivots and continuous improvements. Our commitment
+								to
+								delivery agility translates into tangible competitive advantages for our customers.
+							</p>
+						</div>
+					</div>
+
+					<div class="d-flex align-items-center justify-content-center">
+						<a href="https://chainthat.com/aboutus/" class="btn-all">Find out more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<!--WORKING WITH CHAINTHAT-->
+		<!-- ======================= -->
+		<!-- ======================= -->
+		<section class="working-container ">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/working/swoosh-working.svg"
+				alt="working chainthat">
+		</section>
+
+		<section class="content-section ">
+			<div class="container-all">
+				<div class="text-center mb-5">
+					<h2 class="heading-3">Working with ChainThat</h2>
+					<p class="paragraph-3">ChainThat’s a cloud-native platform that improves market speed, customer
+						satisfaction, and efficiency. Many insurers globally are benefiting, operationally and
+						strategically, from such a platform. Let’s hear it from our clients & partners.</p>
+				</div>
+
+				<div class="working-inner-container">
+					<div class="working-grid">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/working/working-1.jpg"
+							alt="working chainthat">
+					</div>
+
+					<div class="working-inner-text">
+						<h2>Fusion Launches Innovative Cyber Liability Offering using ChainThat’s Policy Admin Platform
+							(BPA)</h2>
+						<p>“Enhancing operational efficiency and supporting scalable growth for an MGA that specializes
+							in
+							innovative cyber insurance products. Objectives included integrating advanced logic into
+							workflows and enhancing process automation, reducing manual errors and facilitating seamless
+							collaboration with a diverse range of partners.“. – Mike Cavanaugh, CUO of Fusion</p>
+						<a href="https://chainthat.com/news-and-insight/fusion-launches-innovative-cyber-liability-offering-using-chainthats-policy-admin-platform-bpa/"
+							class="btn-all">FIND OUT MORE</a>
+					</div>
+				</div>
+
+				<div class="working-inner-container" id="working-inner-container-2">
+					<div class="working-inner-text">
+						<h2>Clover Insurance goes live with ChainThat policy administration system</h2>
+						<p class="paragraph-3-change">“Our partnership with ChainThat is more than just a business
+							agreement. It’s a commitment to continually innovate to deliver better products and a more
+							efficient quoting experience for our brokers.” – Blair Nicholls founder and CEO of Clover
+						</p>
+						<a href="https://chainthat.com/news-and-insight/clover-insurance-goes-live-with-chainthat-policy-administration-system/"
+							class="btn-all">FIND OUT MORE</a>
+					</div>
+
+					<div class="working-grid">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/working/working-2.jpg"
+							alt="working chainthat">
+					</div>
 				</div>
 
 			</div>
+</div>
+</section>
+<!-- Testitmonial -->
+<section class="testi-section">
+	<div class="swiper testiSwiper">
+		<div class="swiper-wrapper">
+			<!-- Slide 1 -->
+			<div class="swiper-slide testi-slide">
+				<div class="inner-slide-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/review1.png"
+						alt="icon" class="testi-top-icon">
+
+					<p class="testi-text">
+						"ChainThat’s distributed ledger-centric platform supports consistency, compliance, and
+						transparency in our multinational transactions, while delivering data clarity and protection
+						across multinational accounts. It enables BHSI to seamlessly coordinate and collaborate
+						across
+						local underwriters, producing offices, and network partners, facilitating the execution of
+						our
+						multinational programs.
+					</p>
+
+					<div class="testi-stars">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider3/review-2.png"
+						alt="icon" class="review-img">
+
+					<span class="testi-name">Head of Multinational at BHSI</span>
+
+					<a href="https://chainthat.com/news-and-insight/berkshire-hathway-specialty-insurance-bhsi-collaborated-with-london-based-insurtech-chainthat-leveraging-its-beyond-multinational-programs-platform-2/"
+						class="testi-btn">Read Success Story</a>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="swiper-slide testi-slide">
+				<div class="inner-slide-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/review1.png"
+						alt="icon" class="testi-top-icon">
+
+					<p class="testi-text">
+						“Our partnership with ChainThat is more than just a business agreement. It’s a commitment to
+						continually innovate to deliver better products and a more efficient quoting experience for
+						our brokers.”
+					</p>
+
+					<div class="testi-stars">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider3/review-1.jpg"
+						alt="icon" class="review-img">
+
+					<span class="testi-name">
+						Blair Nicholls
+					</span>
+
+					<span class="testi-name">
+						CEO, Clover Insurance
+					</span>
+
+					<a href="https://chainthat.com/news-and-insight/clover-insurance-goes-live-with-chainthat-policy-administration-system/"
+						class="testi-btn">Read Success Story</a>
+				</div>
+			</div>
+
+			<!-- Slide 3 -->
+			<div class="swiper-slide testi-slide">
+				<div class="inner-slide-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/review1.png"
+						alt="icon" class="testi-top-icon">
+
+					<p class="testi-text">
+						“Amparo’s mission has always been to provide fair and accessible auto insurance to the
+						immigrant community. Partnering with ChainThat allows us to leverage advanced technology to
+						better serve our customers and streamline our processes.”
+					</p>
+
+					<div class="testi-stars">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider3/review-3.jpg"
+						alt="icon" class="review-img">
+
+					<span class="testi-name">Pushan Sen Gupta</span>
+					<span class="testi-name">
+						Co-Founder of Amparo Insurance</span>
+
+
+					<a href="https://chainthat.com/news-and-insight/amparo-partners-with-chainthat/"
+						class="testi-btn">Read Success Story</a>
+				</div>
+			</div>
+
+			<!-- slide-4 -->
+			<div class="swiper-slide testi-slide">
+				<div class="inner-slide-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/review1.png"
+						alt="icon" class="testi-top-icon">
+
+					<p class="testi-text">
+						“With the ChainThat’s BPA platform, we can be in the driver's seat of our products &
+						distribution channels, enabling us to grow quickly and enhance our solutions over time.”
+					</p>
+
+					<div class="testi-stars">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider3/review-4.png"
+						alt="icon" class="review-img">
+
+					<span class="testi-name"> Mike Cavanaugh,</span>
+					<span class="testi-name">
+						CUO of Fusion.</span>
+
+
+					<a href="https://chainthat.com/news-and-insight/how-chainthats-bpa-platform-transformed-fusions-operations/"
+						class="testi-btn">Read Success Story</a>
+				</div>
+			</div>
 		</div>
-	</section>
+	</div>
+</section>
+<!-- Blog section -->
+
+<section class="blog-section">
+	<div class="container-all">
+		<div class="blog-main-wrap">
+			<!-- Section Heading -->
+			<div class="text-center mb-5">
+				<h2 class="blog-title">News & Insights</h2>
+			</div>
+
+			<!-- Blog Cards Row -->
+			<div class="row g-4">
+
+				<!-- Card 1 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<div class="blog-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/blog/blog-1.png"
+								alt="blog image">
+						</div>
+
+						<p class="blog-date">October 21, 2025</p>
+
+						<h4 class="blog-heading">
+							Customer Recognition: Everett Cash Mutual’s Gesture to ChainThat
+						</h4>
+
+						<a href="https://chainthat.com/news-and-insight/customer-recognition-everett-cash-mutuals-gesture-to-chainthat/"
+							class="blog-read">Read More</a>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<div class="blog-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/blog/blog-2.png"
+								alt="blog image">
+						</div>
+
+						<p class="blog-date">October 13, 2025</p>
+
+						<h4 class="blog-heading">
+							Meet the team at the 25th Annual TMPAA Summit | 20-22 October
+						</h4>
+
+						<a href="https://chainthat.com/news-and-insight/meet-the-team-at-the-25th-annual-tmpaa-summit-20-22-october/"
+							class="blog-read">Read More</a>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<div class="blog-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/blog/blog-3.png"
+								alt="blog image">
+						</div>
+
+						<p class="blog-date">October 1, 2025</p>
+
+						<h4 class="blog-heading">
+							Modern Systems and Mutuals: Insights from ChainThat’s CEO at NAMIC
+						</h4>
+
+						<a href="https://chainthat.com/news-and-insight/insights-from-am-best-tv-at-namic/"
+							class="blog-read">Read More</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="d-flex align-items-center justify-content-center mt-5">
+				<a href="chainthat.com/resources" class="btn-all">View More</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Cta Section -->
+<section class="cta-section">
+	<div class="container-all">
+		<h2 class="cta-heading">Let's Talk</h2>
+
+		<div class="cta-btn-wrap">
+			<a href="https://chainthat.com/contact-us/</a>">
+				Get in Touch
+				<ion-icon name="arrow-forward-outline"></ion-icon>
+			</a>
+		</div>
+	</div>
+</section>
 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+	// HERO SECTION SLIDER
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 1,
+		loop: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		speed: 700,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
 
-	<?php get_footer(); ?>
+	// SLIDER
+	document.addEventListener("DOMContentLoaded", function () {
+		const slider = document.querySelector(".slide-track");
+		const wrapper = document.querySelector(".partners-slider");
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 1,
-			loop: true,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			speed: 700,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
+		let speed = 3;
+		let pos = 0;
+
+		// Clone children only (not whole track)
+		const items = Array.from(slider.children);
+		items.forEach(item => {
+			const clone = item.cloneNode(true);
+			slider.appendChild(clone);
 		});
-	</script>
-</body>
 
-</html>
+		// Calculate exact scrollable width of first set
+		let firstSetWidth = 0;
+		items.forEach(item => {
+			firstSetWidth += item.offsetWidth + 120; // include gap
+		});
+
+		function animate() {
+			pos -= speed;
+			slider.style.transform = `translateX(${pos}px)`;
+
+			// Reset exact, no glitch
+			if (Math.abs(pos) >= firstSetWidth) {
+				pos = 0;
+			}
+
+			requestAnimationFrame(animate);
+		}
+
+		animate();
+
+		// Pause on hover
+		wrapper.addEventListener("mouseenter", () => speed = 0);
+		wrapper.addEventListener("mouseleave", () => speed = 3);
+	});
+
+
+
+	// PARAGRAPH
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const paragraphs = document.querySelectorAll(".why-card-paragraph");
+
+		paragraphs.forEach(p => {
+			p.addEventListener("click", function () {
+
+				// If already expanded → collapse it
+				if (p.classList.contains("expanded")) {
+					p.classList.remove("expanded");
+					p.style.webkitLineClamp = "5";
+				}
+				// Otherwise expand it
+				else {
+					p.classList.add("expanded");
+					p.style.webkitLineClamp = "unset";
+				}
+			});
+		});
+	});
+
+
+	// testimonial 
+	var testiSwiper = new Swiper(".testiSwiper", {
+		loop: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		speed: 600,
+		pagination: {
+			el: ".testi-pagination",
+			clickable: true,
+		},
+	});
+</script>
+
+
+</main>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<?php get_footer(); ?>
