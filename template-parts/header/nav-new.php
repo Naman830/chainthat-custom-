@@ -77,7 +77,7 @@
                             class="arrowTag">News & Insights</a></li>
                     <li><a href="https://paleturquoise-aardvark-551228.hostingersite.com/career/"
                             class="arrowTag">Careers</a></li>
-                    <li><a href="https://paleturquoise-aardvark-551228.hostingersite.com/contact-us/"
+                    <li><a href="/contact-us"
                             class="arrowTag">Contact Us</a></li>
 
                 </ul>

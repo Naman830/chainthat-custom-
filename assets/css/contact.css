@@ -44,7 +44,7 @@ body {
 
 .contact-area {
   background: var(--white-color);
-  padding: 80px 0px;
+  padding: 130px 0px;
 }
 
 .contact-title h2 {
@@ -204,6 +204,11 @@ body {
   .tuch-form {
     max-width: 90%;
   }
+
+  .contact-area .container-all{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 @media (max-width: 700px) {
@@ -211,10 +216,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .contact-title h2 {
-    font-size: 3.3rem;
-    margin-bottom: 20px;
-  }
+.contact-title h2 {
+	font-size: 3rem !important;
+	margin-bottom: 10px !important;
+}
 }
 
 /* ============================== */

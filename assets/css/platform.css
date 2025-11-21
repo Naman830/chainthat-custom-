@@ -96,12 +96,6 @@ body {
   right: 0;
 }
 
-.hero-img-col image {
-  position: absolute;
-  right: 0;
-  max-width: 800px;
-}
-
 .heading {
   margin-bottom: 22px;
   font-size: 3.7vw;
@@ -223,6 +217,7 @@ body {
   .hero-img-col {
     position: relative;
     right: 0;
+    top: 0;
   }
 
   .heading {
@@ -296,46 +291,39 @@ body {
 /* Slider 2 */
 /* -============================ */
 /* -============================ */
-
-.stat-slider2 {
-  padding-bottom: 0px;
-}
-
-.infinite-slider-wrapper {
+.ct-stat-slider .ct-slider-wrapper {
   width: 100%;
+  max-width: 100%;
+  margin: auto;
   overflow: hidden;
   position: relative;
 }
 
-.infinite-slider {
+.ct-stat-slider .ct-slider-track {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  /* bigger gap to separate slides */
-  will-change: transform;
-  cursor: grab;
+  width: 100%;
+  animation: ct-scroll-left 20s linear infinite;
 }
 
-/* Large slide – full width, full height without stretching */
-.infinite-slider img {
-  height: 700px;
-  /* BIGGER image */
-  width: auto;
-  max-width: 100%;
-  /* Prevent breaking layout */
-  object-fit: contain;
-  /* Keep quality, never stretch */
-  border-radius: 20px;
-  user-select: none;
-  pointer-events: none;
-  display: block;
+.ct-stat-slider .ct-slider-track:hover {
+  animation-play-state: paused;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .infinite-slider img {
-    height: 280px;
-    /* big but mobile friendly */
+.ct-stat-slider .ct-slider-track img {
+  width: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@keyframes ct-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -505,8 +493,6 @@ body {
   .platform.container-fluid {
     padding: 60px 0px;
   }
-
-
 
   .section-subheading,
   .section-description,
@@ -764,6 +750,7 @@ body {
 @media (max-width: 1024px) {
   .heading-2 {
     font-size: 40px;
+    text-align: left;
   }
 
   .paragraph-2 {
@@ -775,6 +762,44 @@ body {
 @media (max-width: 764px) {
   .heading-2 {
     font-size: 33px;
+  }
+}
+
+/* Hide slider on desktop */
+.why-flex-slider {
+  display: none;
+}
+
+/* Show slider under 1400px */
+@media (max-width: 1400px) {
+  .why-desktop-grid {
+    display: none !important;
+  }
+  .why-flex-slider {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .why-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: whyLoop 18s linear infinite;
+  }
+
+  .why-slide {
+    flex: 0 0 auto;
+    width: 300px; /* change if needed */
+  }
+}
+
+@keyframes whyLoop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
@@ -899,14 +924,15 @@ body {
   }
 
   .heading-3 {
-    font-size: 40px;
+    font-size: 33px;
+    text-align: left;
   }
 
-    .paragraph-3 {
-	font-size: 14px;
-	line-height: 22px;
-	text-align: left;
-}
+  .paragraph-3 {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+  }
 
   .working-inner-text p {
     padding: 0px 0px 0px 0px;
@@ -1116,6 +1142,10 @@ body {
     max-width: 90%;
     padding: 80px 30px;
   }
+
+  .testi-section {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -1170,8 +1200,7 @@ body {
   text-align: left;
   color: var(--main-color);
 }
-
-.blog-heading {
+.ct-stat-slider .ct-slider-wrapper .blog-heading {
   font-size: 24px;
   font-weight: 700;
   color: var(--green-color);
@@ -1199,6 +1228,10 @@ body {
 
   .blog-img img {
     height: 100%;
+  }
+
+  .blog-section .container-all {
+    padding: 0px 20px !important;
   }
 }
 

@@ -224,11 +224,10 @@
 		<!-- STATS IMAGES-->
 		<!-- ======================= -->
 		<!-- ======================= -->
-		<section class="stat-slider2">
-			<div class="container-all my-5">
-				<div class="infinite-slider-wrapper">
-					<div class="infinite-slider" id="infiniteSlider">
-						<!-- 3 main images -->
+		<section class="ct-stat-slider">
+			<div class="ct-container my-5">
+				<div class="ct-slider-wrapper">
+					<div class="ct-slider-track">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BIA_HERO_Screen-2.png"
 							alt="chainthat-stat-images">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/adminis1.png"
@@ -238,9 +237,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BPA_1.png"
 							alt="chainthat-stat-images">
 
-
-
-						<!-- clone for infinite loop -->
+						<!-- Duplicate for infinite scroll -->
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BIA_HERO_Screen-2.png"
 							alt="chainthat-stat-images">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/adminis1.png"
@@ -249,11 +246,11 @@
 							alt="chainthat-stat-images">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2/BPA_1.png"
 							alt="chainthat-stat-images">
-
 					</div>
 				</div>
 			</div>
 		</section>
+
 
 		<!-- STAT NUMBER -->
 		<section class="stats-area">
@@ -319,80 +316,203 @@
 				</div>
 
 				<!-- 4 Cards -->
-				<div class="row g-4 why-card-row-container">
+				<div class="why-flex-wrapper">
+					<!-- DESKTOP NORMAL GRID -->
+					<div class="row g-4 why-card-row-container why-desktop-grid">
+						<!-- Copy your exact 4 cards here -->
+						<!-- Card 1 -->
+						<div class="col-md-6 col-lg-3">
+							<div class="why-card">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon1.svg"
+									alt="why-icons" />
+								<h3 class="why-card-heading">Insurance Insider</h3>
+								<p class="why-card-paragraph">
+									We bring valuable insights to the table. Our team combines this
+									deep understanding of the insurance business with cutting-edge
+									technology to support insurance organisation's throughout the
+									value chain that allows them to meet their business goals.
+								</p>
+							</div>
+						</div>
 
-					<!-- Card 1 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="why-card">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon1.svg"
-								alt="why-icons">
-							<h3 class="why-card-heading">Insurance Insider</h3>
-							<p class="why-card-paragraph">
-								We bring valuable insights to the table. Our team combines this deep understanding of
-								the
-								insurance business with cutting-edge technology to support insurance organisation's
-								throughout the value chain that allows them to meet their business goals.
-							</p>
+						<!-- Card 2 -->
+						<div class="col-md-6 col-lg-3">
+							<div class="why-card">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon2.svg"
+									alt="why-icons" />
+								<h3 class="why-card-heading">Enterprise Grade Platforms</h3>
+								<p class="why-card-paragraph">
+									Our modern SaaS platforms leverage cutting edge technologies to
+									create a configurable system that provides seamless experience for
+									insurers in managing their end-end policy lifecycle. Our API first
+									approach with industry-leading security measures ensure effortless
+									integration and scalable solution.
+								</p>
+							</div>
+						</div>
+
+						<!-- Card 3 -->
+						<div class="col-md-6 col-lg-3">
+							<div class="why-card">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon3.svg"
+									alt="why-icons" />
+								<h3 class="why-card-heading">Faster speed to market</h3>
+								<p class="why-card-paragraph">
+									Working with ChainThat platforms enables insurers and MGAs to
+									swiftly and efficiently bring new products to market. With
+									streamlined processes and comprehensive support, you can reduce
+									time-to-market, enhance flexibility, and ensure a seamless
+									experience from product development to launch.
+								</p>
+							</div>
+						</div>
+
+						<!-- Card 4 -->
+						<div class="col-md-6 col-lg-3">
+							<div class="why-card">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon4.svg"
+									alt="why-icons" />
+								<h3 class="why-card-heading">Delivery Agility</h3>
+								<p class="why-card-paragraph">
+									ChainThat embraces delivery agility, eschewing traditional-only
+									approaches in favor of innovative, out-of-the-box thinking. Our
+									fast-paced methodology supports business agility, allowing
+									insurers to adapt swiftly to changing market demands. We
+									prioritize flexible, iterative delivery that enable quick pivots
+									and continuous improvements. Our commitment to delivery agility
+									translates into tangible competitive advantages for our customers.
+								</p>
+							</div>
 						</div>
 					</div>
 
-					<!-- Card 2 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="why-card">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon2.svg"
-								alt="why-icons">
-							<h3 class="why-card-heading">Enterprise Grade Platforms </h3>
-							<p class="why-card-paragraph">
-								Our modern SaaS platforms leverage cutting edge technologies to create a configurable
-								system
-								that provides seamless experience for insurers in managing their end-end policy
-								lifecycle.
-								Our API first approach with industry-leading security measures ensure effortless
-								integration
-								and scalable solution.
-							</p>
-						</div>
-					</div>
+					<!-- MOBILE FLEX SLIDER -->
+					<div class="why-flex-slider">
+						<div class="why-track">
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon1.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Insurance Insider</h3>
+									<p class="why-card-paragraph">
+										We bring valuable insights to the table. Our team combines this
+										deep understanding of the insurance business with cutting-edge
+										technology to support insurance organisation's throughout the
+										value chain that allows them to meet their business goals.
+									</p>
+								</div>
+							</div>
 
-					<!-- Card 3 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="why-card">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon3.svg"
-								alt="why-icons">
-							<h3 class="why-card-heading">Faster speed to market</h3>
-							<p class="why-card-paragraph">
-								Working with ChainThat platforms enables insurers and MGAs to swiftly and efficiently
-								bring
-								new products to market. With streamlined processes and comprehensive support, you can
-								reduce
-								time-to-market, enhance flexibility, and ensure a seamless experience from product
-								development to launch.
-							</p>
-						</div>
-					</div>
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon2.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Enterprise Grade Platforms</h3>
+									<p class="why-card-paragraph">
+										Our modern SaaS platforms leverage cutting edge technologies to
+										create a configurable system that provides seamless experience for
+										insurers in managing their end-end policy lifecycle. Our API first
+										approach with industry-leading security measures ensure effortless
+										integration and scalable solution.
+									</p>
+								</div>
+							</div>
 
-					<!-- Card 4 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="why-card">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon4.svg"
-								alt="why-icons">
-							<h3 class="why-card-heading">Delivery Agility</h3>
-							<p class="why-card-paragraph">
-								ChainThat embraces delivery agility, eschewing traditional-only approaches in favor of
-								innovative, out-of-the-box thinking. Our fast-paced methodology supports business
-								agility,
-								allowing insurers to adapt swiftly to changing market demands. We prioritize flexible,
-								iterative delivery that enable quick pivots and continuous improvements. Our commitment
-								to
-								delivery agility translates into tangible competitive advantages for our customers.
-							</p>
-						</div>
-					</div>
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon3.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Faster speed to market</h3>
+									<p class="why-card-paragraph">
+										Working with ChainThat platforms enables insurers and MGAs to
+										swiftly and efficiently bring new products to market. With
+										streamlined processes and comprehensive support, you can reduce
+										time-to-market, enhance flexibility, and ensure a seamless
+										experience from product development to launch.
+									</p>
+								</div>
+							</div>
 
-					<div class="d-flex align-items-center justify-content-center">
-						<a href="https://chainthat.com/aboutus/" class="btn-all">Find out more</a>
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon4.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Delivery Agility</h3>
+									<p class="why-card-paragraph">
+										ChainThat embraces delivery agility, eschewing traditional-only
+										approaches in favor of innovative, out-of-the-box thinking. Our
+										fast-paced methodology supports business agility, allowing
+										insurers to adapt swiftly to changing market demands. We
+										prioritize flexible, iterative delivery that enable quick pivots
+										and continuous improvements. Our commitment to delivery agility
+										translates into tangible competitive advantages for our customers.
+									</p>
+								</div>
+							</div>
+
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon1.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Insurance Insider</h3>
+									<p class="why-card-paragraph">
+										We bring valuable insights to the table. Our team combines this
+										deep understanding of the insurance business with cutting-edge
+										technology to support insurance organisation's throughout the
+										value chain that allows them to meet their business goals.
+									</p>
+								</div>
+							</div>
+
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon2.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Enterprise Grade Platforms</h3>
+									<p class="why-card-paragraph">
+										Our modern SaaS platforms leverage cutting edge technologies to
+										create a configurable system that provides seamless experience for
+										insurers in managing their end-end policy lifecycle. Our API first
+										approach with industry-leading security measures ensure effortless
+										integration and scalable solution.
+									</p>
+								</div>
+							</div>
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon3.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Faster speed to market</h3>
+									<p class="why-card-paragraph">
+										Working with ChainThat platforms enables insurers and MGAs to
+										swiftly and efficiently bring new products to market. With
+										streamlined processes and comprehensive support, you can reduce
+										time-to-market, enhance flexibility, and ensure a seamless
+										experience from product development to launch.
+									</p>
+								</div>
+							</div>
+
+							<div class="why-slide">
+								<div class="why-card">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/whyIcon/whyIcon4.svg"
+										alt="why-icons" />
+									<h3 class="why-card-heading">Delivery Agility</h3>
+									<p class="why-card-paragraph">
+										ChainThat embraces delivery agility, eschewing traditional-only
+										approaches in favor of innovative, out-of-the-box thinking. Our
+										fast-paced methodology supports business agility, allowing
+										insurers to adapt swiftly to changing market demands. We
+										prioritize flexible, iterative delivery that enable quick pivots
+										and continuous improvements. Our commitment to delivery agility
+										translates into tangible competitive advantages for our customers.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+
 			</div>
 		</section>
 
@@ -714,7 +834,7 @@
 		const slider = document.querySelector(".slide-track");
 		const wrapper = document.querySelector(".partners-slider");
 
-		let speed = 3;
+		let speed = 1;
 		let pos = 0;
 
 		// Clone children only (not whole track)
@@ -746,8 +866,10 @@
 
 		// Pause on hover
 		wrapper.addEventListener("mouseenter", () => speed = 0);
-		wrapper.addEventListener("mouseleave", () => speed = 3);
+		wrapper.addEventListener("mouseleave", () => speed = 1);
 	});
+
+	// slider-2
 
 
 
@@ -786,6 +908,113 @@
 			el: ".testi-pagination",
 			clickable: true,
 		},
+	});
+
+
+
+
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+
+		// ===== ULTRA UNIQUE VARIABLES =====
+		const ctStat_track = document.querySelector('.ct-slider-track');
+		const ctStat_slides = document.querySelectorAll('.ct-slider-track img');
+		const ctStat_visible = 2;
+		let ctStat_index = 0;
+		let ctStat_interval = null;
+		let ctStat_dragging = false;
+		let ctStat_startX = 0;
+		let ctStat_currentX = 0;
+
+		// ===== ULTRA UNIQUE FUNCTIONS =====
+		function ctStat_updateSlider() {
+			if (!ctStat_slides.length) return;
+			const ctStat_slideWidth = ctStat_slides[0].offsetWidth + 15;
+			ctStat_track.style.transform = `translateX(${-ctStat_index * ctStat_slideWidth}px)`;
+		}
+
+		function ctStat_startAuto() {
+			ctStat_interval = setInterval(() => {
+				ctStat_index = (ctStat_index + 1) % (ctStat_slides.length - ctStat_visible + 1);
+				ctStat_updateSlider();
+			}, 3000);
+		}
+
+		function ctStat_pauseAuto() {
+			clearInterval(ctStat_interval);
+		}
+
+		// ===== HOVER CONTROLS =====
+		ctStat_track.parentElement.addEventListener('mouseenter', ctStat_pauseAuto);
+		ctStat_track.parentElement.addEventListener('mouseleave', ctStat_startAuto);
+
+		// ===== DRAG EVENT =====
+		ctStat_track.addEventListener('mousedown', (e) => {
+			ctStat_dragging = true;
+			ctStat_startX = e.pageX - ctStat_track.offsetLeft;
+			ctStat_pauseAuto();
+		});
+
+		window.addEventListener('mouseup', () => {
+			ctStat_dragging = false;
+			ctStat_startAuto();
+		});
+
+		window.addEventListener('mousemove', (e) => {
+			if (!ctStat_dragging) return;
+			ctStat_currentX = e.pageX - ctStat_track.offsetLeft;
+			let ctStat_movement = ctStat_currentX - ctStat_startX;
+
+			if (Math.abs(ctStat_movement) > ctStat_slides[0].offsetWidth / 2) {
+				if (ctStat_movement < 0 && ctStat_index < ctStat_slides.length - ctStat_visible) {
+					ctStat_index++;
+				} else if (ctStat_movement > 0 && ctStat_index > 0) {
+					ctStat_index--;
+				}
+				ctStat_updateSlider();
+				ctStat_dragging = false;
+			}
+		});
+
+		// ===== RESIZE EVENT =====
+		window.addEventListener('resize', ctStat_updateSlider);
+
+		// ===== INIT =====
+		ctStat_updateSlider();
+		ctStat_startAuto();
+
+	});
+
+
+	// ====================================== slider in 1400px
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const track = document.querySelector(".why-track");
+		let isDown = false,
+			startX,
+			scrollLeft;
+
+		if (track) {
+			track.addEventListener("mousedown", (e) => {
+				isDown = true;
+				track.style.animation = "none";
+				startX = e.pageX;
+				scrollLeft = track.offsetLeft;
+			});
+
+			window.addEventListener("mouseup", () => {
+				isDown = false;
+				track.style.animation = "whyLoop 18s linear infinite";
+			});
+
+			track.addEventListener("mousemove", (e) => {
+				if (!isDown) return;
+				const x = e.pageX - startX;
+				track.style.transform = `translateX(${x}px)`;
+			});
+		}
 	});
 </script>
 
